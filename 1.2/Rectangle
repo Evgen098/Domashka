@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Rectangle {
+    double side1;
+    double side2;
+    double area;
+    double perimetr;
+
+    double areaCalculator (double Side1, double Side2){
+    area = side1*side2;
+    return area;
+    }
+
+    double perimeterCalculator (double parSide1, double parSide2){
+    perimetr = side1*2 + side2*2;
+    return perimetr;
+    }
+
+    public static void main(String args[]){
+
+        Rectangle priamougolnik = new Rectangle();
+        Scanner num = new Scanner(System.in);
+
+        System.out.println("Введите длину первой стороны прямоугольника");
+        priamougolnik.side1 = num.nextDouble();
+        System.out.println("Введите длину второй стороны прямоугольника");
+        priamougolnik.side2 = num.nextDouble();
+        
+        priamougolnik.areaCalculator(priamougolnik.side1, priamougolnik.side2);
+        priamougolnik.perimeterCalculator(priamougolnik.side1, priamougolnik.side2);
+
+        System.out.println("Площадь прямоугольника равна " + priamougolnik.area);
+        System.out.println("Периметр прямоугольника равен " + priamougolnik.perimetr);
+
+    }
+}
