@@ -1,0 +1,20 @@
+public class Main {
+
+    public static void main(String[] args){
+
+        Address address1 = new Address();
+        address1.setCountry("Украина");
+        address1.setCity("Киев");
+        address1.setStreet("Котляра");
+        address1.setHouse(5);
+        address1.setApartment(7);
+        address1.setIndex(756785);
+
+        System.out.println("Страна: " + address1.getCountry());
+        System.out.println("Город: " + address1.getCity());
+        System.out.println("Улица: " + address1.getStreet());
+        System.out.println("Дом: " + address1.getHouse());
+        System.out.println("Квартира: " + address1.getApartment());
+        System.out.println("Индекс: " + address1.getIndex());
+        }
+}
