@@ -1,0 +1,16 @@
+public class Book {
+
+    public static void main(String[] args){
+        Author show1 = new Author();
+        Title show2 = new Title();
+        Content show3 = new Content();
+
+        show1.show();
+        show2.show();
+        show3.show();
+
+        System.out.println("Автор книги: " + show1.autor);
+        System.out.println("Название книги: " + show2.title);
+        System.out.println("Содержание книги: " + show3.content);
+    }
+}
