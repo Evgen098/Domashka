@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Content {
+
+    String content;
+
+    public void show (){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите содержание книги");
+        this.content = scan.nextLine();
+    }
+
+
+}
