@@ -1,0 +1,16 @@
+public class Computer {
+
+    String comp;
+
+    public Computer(String comp){
+        this.comp=comp;
+        System.out.println(comp);
+    }
+
+    public static void main(String[] args){
+        Computer[] computers = new Computer[5];
+        for( int i = 0; i < 5; i++) {
+            computers[i] = new Computer("intel" + (i + 1));
+        }
+    }
+}
