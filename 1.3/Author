@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Author {
+
+    String autor;
+
+    public void show (){
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите автора книги");
+        this.autor = scan.nextLine();
+
+    }
+}
