@@ -1,0 +1,22 @@
+public class BadPupil extends Pupil{
+
+    @Override
+    public void study(){
+        System.out.println("Ученик плохо учится");
+    }
+
+    @Override
+    public void read(){
+        System.out.println("Ученик плохо читает");
+    }
+
+    @Override
+    public void write(){
+        System.out.println("Ученик плохо пишет");
+    }
+
+    @Override
+    public void relax(){
+        System.out.println("Ученик много отдыхает");
+    }
+}
