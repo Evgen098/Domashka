@@ -1,0 +1,18 @@
+public class Ship extends Vehicle{
+
+    int people;
+    String port;
+
+    public Ship() {
+    }
+
+    @Override
+    void ship(int price, int spead, int age, int people, String port) {
+        System.out.println("Price of Ship: " + price);
+        System.out.println("Spead of Ship: " + spead);
+        System.out.println("Age of Ship: " + age);
+        System.out.println("People: " + people);
+        System.out.println("Port: " + port);
+        System.out.println("_____________________________");
+    }
+}
