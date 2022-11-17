@@ -1,0 +1,28 @@
+//Используя IntelliJ IDEA, создайте проект. Требуется: Создать класс Vehicle.
+//В теле класса создайте поля: координаты и параметры средств передвижения (цена,
+//скорость, год выпуска). Создайте 3 производных класса Plane, Саг и Ship. Для класса
+//Plane должна быть определена высота и количество пассажиров. Для класса Ship –
+//количество пассажиров и порт приписки. Написать программу, которая выводит на
+//экран информацию о каждом средстве передвижения.
+
+public class Vehicle {
+    int price;
+    int spead;
+    int age;
+
+    void car(int price, int spead, int age){
+    }
+    void plane(int price, int spead, int age, int h, int people){
+    }
+    void ship(int price, int spead, int age, int people, String port){
+    }
+
+    public static void main(String[] args) {
+        Car car = new Car();
+        Plane plane = new Plane();
+        Ship ship = new Ship();
+        car.car(12000, 200, 2020);
+        plane.plane(200000, 800, 2010, 3000, 40);
+        ship.ship(150000, 50, 2015, 200, "Аргенто");
+    }
+}
