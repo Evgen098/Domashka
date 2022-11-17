@@ -1,0 +1,18 @@
+public class TXTHandler extends AbstractHandler{
+
+    protected void open(){
+        System.out.println("Открыт файл с расширением TXT");
+    }
+
+    protected void create(){
+        System.out.println("Создан файл с расширением TXT");
+    }
+
+    protected void change(){
+        System.out.println("Редактирован файл с расширением TXT");
+    }
+
+    protected void save(){
+        System.out.println("Сохранен файл с расширением TXT");
+    }
+}
