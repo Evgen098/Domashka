@@ -1,0 +1,8 @@
+public class Red extends Printer{
+
+    @Override
+    public void print(String value) {
+        System.out.print(TextColor.RED);
+        System.out.println(value);
+    }
+}
