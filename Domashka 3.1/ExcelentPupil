@@ -1,0 +1,22 @@
+public class ExcelentPupil extends Pupil{
+
+    @Override
+    public void study(){
+        System.out.println("Ученик отлично учится");
+    }
+
+    @Override
+    public void read(){
+        System.out.println("Ученик отлично читает");
+    }
+
+    @Override
+    public void write(){
+        System.out.println("Ученик отлично пишет");
+    }
+
+    @Override
+    public void relax(){
+        System.out.println("Ученик редко отдыхает");
+    }
+}
