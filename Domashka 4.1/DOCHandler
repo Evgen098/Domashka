@@ -1,0 +1,18 @@
+public class DOCHandler extends AbstractHandler{
+
+    protected void open(){
+        System.out.println("Открыт файл с расширением DOC");
+    }
+
+    protected void create(){
+        System.out.println("Создан файл с расширением DOC");
+    }
+
+    protected void change(){
+        System.out.println("Редактирован файл с расширением DOC");
+    }
+
+    protected void save(){
+        System.out.println("Сохранен файл с расширением DOC");
+    }
+}
