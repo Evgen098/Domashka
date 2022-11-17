@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class ConverterTemperature {
+
+    public static void convert(){
+        Scanner scanner = new Scanner(System.in);
+        double grad = scanner.nextDouble();
+        double kelvin = grad + 273.15;
+        double farengeit = grad * 1.8 + 32;
+        System.out.println(grad + " C = " + kelvin + " K");
+        System.out.println(grad + " C = " + farengeit + " F");
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("Введите значение в цельсиях");
+        convert();
+    }
+}
