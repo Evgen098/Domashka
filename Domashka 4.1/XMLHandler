@@ -1,0 +1,18 @@
+public class XMLHandler extends AbstractHandler{
+
+    protected void open(){
+        System.out.println("Открыт файл с расширением XML");
+    }
+
+    protected void create(){
+        System.out.println("Создан файл с расширением XML");
+    }
+
+    protected void change(){
+        System.out.println("Редактирован файл с расширением XML");
+    }
+
+    protected void save(){
+        System.out.println("Сохранен файл с расширением XML");
+    }
+}
