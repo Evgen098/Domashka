@@ -1,0 +1,16 @@
+public class ClassRoom {
+    String pupils;
+
+    public ClassRoom(String pupils) {
+        this.pupils=pupils;
+        Pupil a = new Pupil();
+        a.study();
+        a.write();
+        a.read();
+        a.relax();
+    }
+
+    public ClassRoom() {
+    }
+
+}
