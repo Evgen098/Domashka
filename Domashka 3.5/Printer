@@ -1,0 +1,26 @@
+//Используя IntelliJ IDEA, создайте проект. Требуется: Создайте класс Printer.
+//В теле класса создайте метод void print(String value), который выводит на экран
+//значение аргумента. Реализуйте возможность того, чтобы в случае наследования от
+//данного класса других классов, и вызове соответствующего метода их экземпляра, строки,
+//переданные в качестве аргументов методов, выводились разными цветами. Обязательно
+//используйте приведение типов.
+
+
+public class Printer {
+    String value;
+
+    public void print(String value){
+        this.value=value;
+        System.out.println(value);
+        
+    }
+
+    public static void main(String[] args) {
+        Printer printer = new Printer();
+        printer.print("Это обычный цвет текста");
+        Black black = new Black();
+        black.print("Это черный цвет текста");
+        Red red = new Red();
+        red.print("Это красный цвет текста");
+    }
+}
