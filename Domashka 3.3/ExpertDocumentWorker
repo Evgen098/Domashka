@@ -1,0 +1,9 @@
+public class ExpertDocumentWorker extends ProDocumentWorker{
+
+    public ExpertDocumentWorker() {
+    }
+
+    void saveDocument(){
+        System.out.println("Документ сохранен в новом формате");
+    }
+}
