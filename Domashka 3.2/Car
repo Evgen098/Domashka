@@ -1,0 +1,13 @@
+public class Car extends Vehicle{
+
+    public Car() {
+    }
+
+    @Override
+    void car(int price, int spead, int age) {
+        System.out.println("Price of Car: " + price);
+        System.out.println("Spead of Car: " + spead);
+        System.out.println("Age of Car: " + age);
+        System.out.println("_____________________________");
+    }
+}
