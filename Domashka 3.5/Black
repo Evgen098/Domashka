@@ -1,0 +1,8 @@
+public class Black extends Printer{
+
+    @Override
+    public void print(String value) {
+        System.out.print(TextColor.BLACK);
+        System.out.println(value);
+    }
+}
