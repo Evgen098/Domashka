@@ -1,0 +1,31 @@
+//Используя Intelij IDEA создать проект, пакет. Используя класс Zoo
+//Задания 2, удалить 3, 5, 7 животные, узнать размер списка и вывести в консоль.
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Zoo {
+
+
+    public static void main(String[] args) {
+        ArrayList arrAnimal = new ArrayList();
+        arrAnimal.add(0, "cat");
+        arrAnimal.add(1, "dog");
+        arrAnimal.add(2, "pig");
+        arrAnimal.add(3, "cow");
+        arrAnimal.add(4, "parrot");
+        arrAnimal.add(5, "hamster");
+        arrAnimal.add(6, "mouse");
+        arrAnimal.add(7, "rat");
+        System.out.println(arrAnimal);
+
+        Iterator iter = arrAnimal.iterator();
+        for (int i = 0; iter.hasNext(); iter.next(), i++){
+            if(i == 3 || i == 5 || i == 7)
+            iter.remove();
+        }
+        System.out.println("Размер массива: " + arrAnimal.size());
+        System.out.println(arrAnimal);
+
+    }
+}
