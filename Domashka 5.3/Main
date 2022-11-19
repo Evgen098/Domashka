@@ -1,0 +1,21 @@
+//Используя Intelij IDEA создать проект, пакет. Создать класс Main,
+//создать список целых чисел и используя ListIterator пройтись по
+//списку и увеличить значения на 1.
+
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.ListIterator;
+
+public class Main {
+
+    public static void main(String[] args) {
+        List<Integer> arrInt = Arrays.asList(1,2,3,4,5);
+        ListIterator<Integer> listIterator = arrInt.listIterator();
+        while (listIterator.hasNext()){
+            Integer x = listIterator.next();
+            listIterator.set(x+1);
+        }
+        System.out.println(arrInt);
+    }
+}
