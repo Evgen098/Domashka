@@ -1,0 +1,23 @@
+//Используя Intelij IDEA создать проект, пакет. Создать class Main,
+//в нем создать список, добавить учителей, которых вы только сможете
+//вспомнить со школы. И получить индекс самого лучшего учителя и
+//самого не очень. Вывести список в консоль.
+
+
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList<String> arrTeacher = new ArrayList();
+        arrTeacher.add("Галина Ивановна");
+        arrTeacher.add("Иван Петрович");
+        arrTeacher.add("Инесса Николаевна");
+        arrTeacher.add("Анна Васильевна");
+        System.out.println(arrTeacher);
+
+        System.out.println("Лучший учитель: " + arrTeacher.indexOf("Галина Ивановна"));
+        System.out.println("Самый не очень учитель: " + arrTeacher.indexOf("Инесса Николаевна"));
+
+    }
+}
