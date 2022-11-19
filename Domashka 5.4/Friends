@@ -1,0 +1,23 @@
+//Используя Intelij IDEA создать класс Friends. С помощью методов
+//ArrayList добавить в массив имена друзей. Вывести список друзей,
+//после вывести список друзей отсортировав в алфавитном порядке.
+
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Friends {
+
+    public static void main(String[] args) {
+        ArrayList<String> arrFriends = new ArrayList();
+        arrFriends.add("Вася");
+        arrFriends.add("Юра");
+        arrFriends.add("Петя");
+        arrFriends.add("Антон");
+        System.out.println(arrFriends);
+
+        Collections.sort(arrFriends);
+        System.out.println(arrFriends);
+
+    }
+}
