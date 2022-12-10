@@ -1,42 +1,4 @@
-import java.util.Scanner;
-
 public class Pupil {
-    String pupils;
-    static int rez;
-
-    static int numbers2(){
-        Scanner scan = new Scanner(System.in);
-        rez = scan.nextInt();
-        return rez;
-    }
-    public Pupil(String pupils) {
-        this.pupils=pupils;
-        System.out.println(pupils);
-        Scanner scan = new Scanner(System.in);
-        boolean value=true;
-
-        System.out.println("Введите от 1 до 3, где 1 - плохо учится, 3 - отлично учится");
-        while (value=true) {
-            numbers2();
-            if (rez < 1) {
-                System.out.println("Вы ввели меньше единицы");
-            } else if (rez < 2) {
-                BadPupil badPupil = new BadPupil();
-                break;
-            } else if (rez < 3) {
-                GoodPupil goodPupil = new GoodPupil();
-                break;
-            } else if (rez < 4) {
-                ExcelentPupil excelentPupil = new ExcelentPupil();
-                break;
-            } else {
-                System.out.println("Вы ввели больше 3");
-            }
-        }
-        ClassRoom classRoom = new ClassRoom(pupils);
-    }
-
-    public Pupil(){}
 
     public void study(){}
 
