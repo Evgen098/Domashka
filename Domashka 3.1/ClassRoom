@@ -1,16 +1,10 @@
 public class ClassRoom {
-    String pupils;
 
-    public ClassRoom(String pupils) {
-        this.pupils=pupils;
-        Pupil a = new Pupil();
-        a.study();
-        a.write();
-        a.read();
-        a.relax();
+    public ClassRoom(Pupil pupil){
+        System.out.println();
+        pupil.read();
+        pupil.relax();
+        pupil.write();
+        pupil.study();
     }
-
-    public ClassRoom() {
-    }
-
 }
