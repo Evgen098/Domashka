@@ -11,49 +11,16 @@
         Выведите информацию о том, как все ученики экземпляра класса ClassRoom умеют
         учиться, читать, писать, отдыхать.
 */
-import java.util.Scanner;
 
 public class Main {
-    static int numb;
-    static int numbers(){
-        Scanner scan = new Scanner(System.in);
-        numb = scan.nextInt();
-        return numb;
-    }
 
-    public Main() {
-    }
 
     public static void main(String[] args) {
 
-        boolean value=true;
-
-        System.out.println("Введите кол-во учеников в классе от 2 до 4 включительно");
-        while (value=true) {
-            numbers();
-            if (numb < 2) {
-                System.out.println("Вы ввели меньше двух");
-            } else if (numb < 3) {
-                System.out.println("Вы создали класс из 2 учеников");
-                break;
-            } else if (numb < 4) {
-                System.out.println("Вы создали класс из 3 учеников");
-                break;
-            } else if (numb < 5) {
-                System.out.println("Вы создали класс из 4 учеников");
-                break;
-            } else {
-                System.out.println("Вы ввели больше 4");
-            }
-        }
-
-
-        Pupil[] pupil = new Pupil[numb];
-        for( int i = 0; i < numb; i++) {
-            pupil[i] = new Pupil("Ученик " + (i + 1));
-        }
-
-
+        ClassRoom [] classRoom=new ClassRoom[3];
+        classRoom [0]= new ClassRoom(new ExcelentPupil());
+        classRoom[1]= new ClassRoom(new BadPupil());
+        classRoom [2]= new ClassRoom(new GoodPupil() );
 
     }//main
 }//Main
