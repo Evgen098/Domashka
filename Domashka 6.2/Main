@@ -1,0 +1,31 @@
+//Создайте проект, используя IntelliJ IDEA. Создайте перечислительный тип (enum)
+//Animals, содержащий конструктор, который должен принимать целочисленное значение
+//(возраст животного), и содержать перегруженный метод toString(), который должен
+//возвращать название экземпляра и возраст животного.
+
+
+public class Main {
+
+        public enum Animals{
+            Murka(15), Arra(1), Krusa(7), Tuzik(4);
+
+            private int age;
+
+            Animals(int age){
+                this.age = age;
+            }
+
+            @Override
+            public String toString() {
+                return name() + " {" +
+                        "возраст=" + age +
+                        '}';
+            }
+        }
+
+        public static void main(String[] args) {
+            for(Animals animals: Animals.values())
+                System.out.println(animals);
+        }
+
+}
