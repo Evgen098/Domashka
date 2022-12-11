@@ -1,0 +1,36 @@
+//Создайте проект, используя IntelliJ IDEA. Создайте перечислительный тип (enum)
+//Vehicles, содержащий конструктор, который должен принимать целочисленное значение
+//(стоимость автомобиля), содержать метод getColor(), который возвращает строку с
+//цветом автомобиля, и содержать перегруженный метод toString(), который должен
+//возвращать строку с названием экземпляра, цветом и стоимостью автомобиля
+
+
+public class Main {
+
+    public enum Vehicles{
+        Mersedes(20000, "White"), BMW(18000, "Black"), Lexus(25000, "Blue");
+
+        int price;
+        String color;
+
+        Vehicles(int prise, String color) {
+            this.price=prise;
+            this.color=color;
+        }
+
+        public String getColor() {return color;}
+
+        @Override
+        public String toString() {
+            return "Vehicles{" + name() +
+                    ": price=" + price +
+                    " USD, color='" + color + '\'' +
+                    '}';
+        }
+    }
+
+    public static void main(String[] args) {
+        for(Vehicles vehicles: Vehicles.values())
+            System.out.println(vehicles);
+    }
+}
